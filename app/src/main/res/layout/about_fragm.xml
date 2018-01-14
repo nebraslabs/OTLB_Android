@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+
+
+
+
+
+
+        <ImageView
+            android:layout_width="@dimen/d100"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="@dimen/d30"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="fitCenter"
+            android:layout_height="@dimen/d100" />
+
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="@dimen/fontSizeXLarge"
+            android:textColor="@color/text_dark_grey"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/d50"
+            android:layout_height="wrap_content"
+            android:text="نسخة 1.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="@dimen/fontSizeMediumLarge"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="@dimen/d16"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="جميع الحقوق محفوظة " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="2018-2017 © "
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/fontSizeMediumLarge" />
+
+
+
+
+        <ImageView
+            android:id="@+id/img_nebras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d28"
+            android:visibility="visible"
+            android:src="@drawable/ic_nebras"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/d6"
+            android:text="www.nebrasapps.com"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/fontSizeMediumLarge" />
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

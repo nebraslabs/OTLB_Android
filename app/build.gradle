@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.nebrasapps.otlb"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 2
+        versionName "2.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:mediarouter-v7:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.firebase:geofire-android:2.1.1'
+    compile 'com.google.android.gms:play-services:9.6.0'
+    // add dependency
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.github.bumptech.glide:glide:4.0.0'
+    compile 'com.github.jd-alexander:library:1.1.0'
+    compile 'com.mlsdev.rximagepicker:library:2.0.2'
+    compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+    implementation 'com.android.support:design:26.1.0'
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "493511174540",
+    "firebase_url": "https://finder-2c054.firebaseio.com",
+    "project_id": "finder-2c054",
+    "storage_bucket": "finder-2c054.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493511174540:android:6bf60b27cd77a536",
+        "android_client_info": {
+          "package_name": "com.nebrasapps.otlb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493511174540-5llnp0d0vcnpj2smkfu4ff6omlpftdgh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf8N1ZOMzF0Kf7s6-JlZVkd_7ZiHe3qRY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

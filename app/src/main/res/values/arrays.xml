@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="user_types">
+        <item>Customer</item>
+        <item>Driver</item>
+
+    </string-array>
+
+    <string-array name="service_types">
+        <item>تاكسي</item>
+        <item>توصيل طلبات</item>
+        <item>سطحة</item>
+        <item>كهرباء</item>
+        <item>سباكة</item>
+        <item>عمالة نزلية</item>
+        <item>وقود</item>
+        <item>كفرات السيارة</item>
+        <item>تغيير زيت</item>
+        <item>غسيل السيارة</item>
+        <item>بطارية السيارة</item>
+        <item>قفل السيارة</item>
+        <item>صيانة سيارة</item>
+        <item>مياه معدنية</item>
+
+    </string-array>
+</resources>

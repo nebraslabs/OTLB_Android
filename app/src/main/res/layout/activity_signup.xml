@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/bg_color"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/topLay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d50"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:gravity="center|center_vertical"
+            android:textColor="@android:color/white"
+            android:text="Create Account" />
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/d26"
+            android:layout_height="@dimen/d26"
+            android:layout_centerVertical="true"
+            android:rotation="180"
+            android:layout_marginLeft="@dimen/d10"
+            android:src="@drawable/back_white"/>
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/viewdraw"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:visibility="gone"
+        android:layout_below="@+id/topLay"
+        android:background="@color/divider"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewdraw"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/topLay"
+            android:background="@color/white_color"
+            android:padding="@dimen/d20">
+            <ImageView
+                android:layout_width="@dimen/d100"
+                android:layout_height="@dimen/d100"
+                android:layout_marginTop="@dimen/d16"
+                android:layout_marginBottom="@dimen/d16"
+                android:layout_gravity="center|center_vertical"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d26"
+                android:layout_marginBottom="@dimen/d26"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/d26"
+                android:visibility="gone"
+                android:gravity="center|center_vertical"
+                android:text=" إنشاء حساب"/>
+            <com.nebrasapps.otlb.components.CustomEditText
+                android:id="@+id/name"
+                style="@style/edittxt_style"
+                android:hint="الاسم"
+                android:background="@drawable/edittext_grey_corner"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/grey_clr"
+
+                android:inputType="text"
+                />
+            <com.nebrasapps.otlb.components.CustomEditText
+                android:id="@+id/mobile"
+                android:maxLength="15"
+                style="@style/edittxt_style"
+                android:hint="رقم الجوال"
+                android:background="@drawable/edittext_grey_corner"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/grey_clr"
+
+                android:inputType="number"
+                />
+            <com.nebrasapps.otlb.components.CustomEditText
+                android:id="@+id/email"
+                style="@style/edittxt_style"
+                android:hint="@string/prompt_user"
+                android:background="@drawable/edittext_grey_corner"
+                android:textColorHint="@color/grey_clr"
+
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorPrimary"
+
+                />
+
+            <com.nebrasapps.otlb.components.CustomText
+                android:id="@+id/email_error"
+                style="@style/error_view_style"
+                android:text="@string/error_field_required"
+                />
+
+            <com.nebrasapps.otlb.components.CustomEditText
+                android:id="@+id/password"
+                style="@style/edittxt_style"
+                android:hint="@string/prompt_password"
+                android:background="@drawable/edittext_grey_corner"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/grey_clr"
+                android:inputType="textPassword"
+                />
+            <com.nebrasapps.otlb.components.CustomText
+                android:id="@+id/pwd_error"
+                style="@style/error_view_style"
+                android:text="@string/error_field_required"
+                />
+            <RadioGroup
+                android:id="@+id/userOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="@dimen/d2"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/customer"
+                    style="@style/rbtnStyleWeight"
+                    android:gravity="center|center_vertical"
+                    android:layout_marginRight="@dimen/d8"
+                    android:textSize="@dimen/d12"
+                    android:checked="true"
+                    android:text="عميل"/>
+
+                <RadioButton
+                    android:id="@+id/driver"
+                    style="@style/rbtnStyleWeight"
+                    android:gravity="center|center_vertical"
+                    android:layout_marginLeft="@dimen/d8"
+                    android:textSize="@dimen/d12"
+                    android:text="مقدم خدمة"/>
+            </RadioGroup>
+            <TextView
+                android:id="@+id/serviceType"
+                style="@style/signup_edittext_style"
+                android:text="الخدمات"
+                android:visibility="gone"
+                android:textColor="@color/white_color"
+
+                android:inputType="textEmailAddress"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc_services"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:scrollbarSize="@dimen/d2"
+                android:scrollbars="horizontal"/>
+            <com.nebrasapps.otlb.components.CustomText
+                android:id="@+id/registration"
+                style="@style/btn_style"
+                android:textSize="@dimen/d18"
+
+                android:layout_marginTop="@dimen/d36"
+                android:layout_gravity="center|center_vertical"
+                android:text="@string/sign_up"
+                />
+
+            <Spinner
+                android:id="@+id/userType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:entries="@array/user_types"/>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/dialog_progress"/>
+</RelativeLayout>

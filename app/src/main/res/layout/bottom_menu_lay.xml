@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:id="@+id/nav_logout"
+        style="@style/label_style"
+        android:layout_width="match_parent"
+        android:text="@string/lgt"
+        android:textSize="@dimen/d12"
+        android:padding="@dimen/d10"
+        android:drawableRight="@drawable/ic_logout"
+        android:textColor="@color/white_color"/>
+</LinearLayout>

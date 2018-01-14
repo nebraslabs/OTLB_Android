@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RadioGroup
+        android:id="@+id/menu_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RadioButton
+            android:id="@+id/nav_home"
+            style="@style/label_style"
+            android:layout_width="match_parent"
+            android:text="@string/home"
+            android:padding="@dimen/d10"
+            android:button="@null"
+            android:textSize="@dimen/d14"
+
+            android:checked="true"
+            android:drawableRight="@drawable/ic_home"
+            android:textColor="@drawable/nav_item_text_selector"/>
+        <RadioButton
+            android:id="@+id/nav_history"
+            style="@style/label_style"
+            android:layout_width="match_parent"
+            android:text="@string/history"
+            android:padding="@dimen/d10"
+            android:button="@null"
+            android:textSize="@dimen/d14"
+            android:drawableRight="@drawable/ic_history"
+            android:textColor="@drawable/nav_item_text_selector"/>
+        <RadioButton
+            android:id="@+id/nav_profile"
+            style="@style/label_style"
+            android:layout_width="match_parent"
+            android:text="@string/profile"
+            android:textSize="@dimen/d14"
+            android:padding="@dimen/d10"
+            android:button="@null"
+            android:drawableRight="@drawable/ic_profile"
+            android:textColor="@drawable/nav_item_text_selector"/>
+        <RadioButton
+            android:id="@+id/nav_about"
+            style="@style/label_style"
+            android:layout_width="match_parent"
+            android:text="@string/about"
+            android:textSize="@dimen/d14"
+            android:padding="@dimen/d10"
+            android:button="@null"
+            android:drawableRight="@drawable/ic_about"
+            android:textColor="@drawable/nav_item_text_selector"/>
+    </RadioGroup>
+</LinearLayout>

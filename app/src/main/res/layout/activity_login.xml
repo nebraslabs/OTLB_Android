@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/bg_clr"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/signinbg"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/d20">
+            <ImageView
+                android:layout_width="@dimen/d66"
+                android:layout_height="@dimen/d66"
+                android:layout_marginTop="@dimen/d6"
+                android:layout_gravity="center|center_vertical"
+                android:src="@drawable/ic_launcher"/>
+            <com.nebrasapps.otlb.components.HeaderCustomText
+                style="@style/label_style"
+                android:layout_width="wrap_content"
+                android:text="OTLB"
+                android:layout_marginTop="@dimen/d4"
+                android:textSize="@dimen/d16"
+                android:layout_gravity="center|center_vertical"
+
+                />
+            <TextView
+                style="@style/label_style"
+                android:hint="@string/prompt_user"
+                android:layout_marginTop="@dimen/d10"
+                android:visibility="gone"
+                />
+            <com.nebrasapps.otlb.components.CustomEditText
+                android:id="@+id/email"
+                style="@style/edittxt_style"
+                android:hint="@string/prompt_user"
+                android:layout_marginTop="@dimen/d16"
+                android:inputType="textEmailAddress"
+                />
+
+            <com.nebrasapps.otlb.components.CustomText
+                android:id="@+id/email_error"
+                style="@style/error_view_style"
+                android:text="@string/error_field_required"
+                />
+            <TextView
+                style="@style/label_style"
+                android:layout_marginTop="@dimen/d10"
+                android:hint="@string/prompt_password"
+                android:visibility="gone"
+                />
+            <com.nebrasapps.otlb.components.CustomEditText
+                android:id="@+id/password"
+                style="@style/edittxt_style"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword"
+                />
+            <com.nebrasapps.otlb.components.CustomText
+                android:id="@+id/pwd_error"
+                style="@style/error_view_style"
+                android:text="@string/error_field_required"
+                />
+            <com.nebrasapps.otlb.components.CustomText
+                android:id="@+id/login"
+                style="@style/btn_style"
+                android:textSize="@dimen/d18"
+
+                android:layout_marginTop="@dimen/d36"
+                android:layout_gravity="center|center_vertical"
+                android:text="@string/sign_in"
+                />
+            <com.nebrasapps.otlb.components.CustomText
+                android:id="@+id/registration"
+                style="@style/label_style"
+                android:textStyle="bold"
+                android:padding="@dimen/d16"
+                android:textSize="@dimen/d14"
+                android:textColor="@color/divider"
+                android:gravity="center|center_vertical"
+                android:text="@string/sign_up"
+                />
+            <Spinner
+                android:id="@+id/userType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:entries="@array/user_types"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/dialog_progress"/>
+</RelativeLayout>

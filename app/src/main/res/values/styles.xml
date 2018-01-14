@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchWidth" parent="Match">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="signup_edittext_style" parent="MatchWidth">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@color/login_hint_color</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="edittxt_style" parent="MatchWidth">
+        <item name="android:layout_marginTop">@dimen/d10</item>
+        <item name="android:layout_height">@dimen/d50</item>
+        <item name="android:textSize">@dimen/d14</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:textColorHint">@color/white_color</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:drawablePadding">@dimen/d10</item>
+        <item name="android:padding">@dimen/d12</item>
+        <item name="android:background">@drawable/edittext_rounded_corner</item>
+    </style>
+    <style name="label_style" parent="MatchWidth">
+        <item name="android:layout_marginTop">@dimen/d10</item>
+        <item name="android:textSize">@dimen/d16</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:textColorHint">@color/white_color</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:drawablePadding">@dimen/d10</item>
+        <item name="android:padding">@dimen/d4</item>
+    </style>
+    <style name="error_view_style" parent="MatchWidth">
+        <item name="android:textColor">@color/error_clr</item>
+        <item name="android:layout_marginTop">@dimen/d2</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:visibility">gone</item>
+
+    </style>
+
+    <style name="btn_style" parent="MatchWidth">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/d10</item>
+        <item name="android:textSize">@dimen/d16</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:gravity">center|center_vertical</item>
+        <item name="android:paddingLeft">@dimen/d62</item>
+        <item name="android:paddingRight">@dimen/d62</item>
+        <item name="android:paddingTop">@dimen/d16</item>
+        <item name="android:paddingBottom">@dimen/d16</item>
+        <item name="android:background">@drawable/btn_rounded_corner</item>
+    </style>
+    <style name="rbtnStyleWeight" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/register_track_drawable</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">@dimen/d6</item>
+        <item name="android:paddingRight">@dimen/d6</item>
+        <item name="android:paddingTop">@dimen/d10</item>
+        <item name="android:paddingBottom">@dimen/d10</item>
+        <item name="android:textColor">@drawable/register_switch_text_selector</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

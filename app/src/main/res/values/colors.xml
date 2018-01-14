@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#003456</color>
+    <color name="colorPrimaryDark">#002B49</color>
+    <color name="colorAccent">#5DADE2</color>
+    <color name="grey_clr">#3E3E3E</color>
+    <color name="login_hint_color">#CBCBD1</color>
+    <color name="desc_color">#C1D9E9</color>
+    <color name="white_color">#ffffff</color>
+    <color name="bg_color">#F8F8F8</color>
+    <color name="error_clr">#B21108</color>
+    <color name="cancelled_clr">#ff8d33</color>
+    <color name="accept_clr">#10A121</color>
+    <color name="divider">#427093</color>
+    <color name="text_dark_grey">#272A40</color>
+    <color name="text_grey">#868C97</color>
+    <color name="bg_clr">#013756</color>
+</resources>

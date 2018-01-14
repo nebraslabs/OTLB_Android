@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">OTLB</string>
+    <string name="loc_error">يرجى اختيار مكان الانطلاق والوصول</string>
+    <string name="maintenance_error">يرجى اختيار الوجهة</string>
+    <string name="service_type">يرجى اختيار خدمة على الأقل</string>
+    <string name="order_now">اطلب الآن</string>
+    <string name="fontStyle">Montserrat-Light.ttf</string>
+    <string name="fontStyle1">Montserrat-Bold.ttf</string>
+    <string name="header_style">Michroma.ttf</string>
+    <string name="prompt_user">البريد الإلكتروني</string>
+    <string name="prompt_password">كلمة المرور</string>
+    <string name="error_field_required">حقل مطلوب</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="sign_up">حساب جديد</string>
+    <string name="lgt">خروج</string>
+    <string name="logout">هل تريد بالتأكيد تسجيل الخروج؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="history">الخدمات السابقة</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="about">عن التطبيق</string>
+    <string name="network_error">No network available</string>
+    <string name="cancellled_request">تم إلغاء الطلب</string>
+    <string name="accept">قبول</string>
+    <string name="reject">رفض </string>
+    <string name="ok">حسنا</string>
+    <string name="cancel">إلغاء</string>
+    <string name="no_pvdr_fnd"> لا يوجد مقدم خدمة متوفر حاليا</string>
+    <string name="exit">الخروج من التطبيق؟</string>
+    <string name="accepted">تم القبول</string>
+    <string name="rejected">تم الرفض</string>
+    <string name="cancelled"> تم الإلغاء</string>
+    <string name="onboard">ONBOARD</string>
+</resources>

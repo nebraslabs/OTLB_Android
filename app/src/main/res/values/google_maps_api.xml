@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=31:85:A6:FA:D1:CB:0B:C6:D2:B5:D3:FB:DF:83:60:F7:5E:49:15:BB%3Bcom.nebrasapps.cabbooking
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    31:85:A6:FA:D1:CB:0B:C6:D2:B5:D3:FB:DF:83:60:F7:5E:49:15:BB
+
+    SHA-1 certificate fingerprint:
+    31:85:A6:FA:D1:CB:0B:C6:D2:B5:D3:FB:DF:83:60:F7:5E:49:15:BB
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBv0LapBO1YRM_pubjfwcHA_1HsadzjNw8</string>
+</resources>

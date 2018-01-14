@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context=".RiderHomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:minHeight="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:contentInsetLeft="0dp"
+                android:contentInsetStart="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                android:contentInsetRight="0dp"
+                android:contentInsetEnd="0dp"
+                android:elevation="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:visibility="gone"
+                android:id="@+id/currentLoc"
+                android:src="@drawable/currentloc"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:visibility="gone"
+                android:id="@+id/workingSwitch"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/fontSizeMediumLarge"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="@dimen/d30"
+                android:layout_height="@dimen/d30"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+            <View
+                android:id="@+id/horzontal_stripe"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/divider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:openDrawer="end">
+<!--
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:background="@android:color/white"
+                android:layout_height="match_parent" />-->
+            <com.nebrasapps.otlb.components.CustomViewPager
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+                android:background="@android:color/white"
+            android:layout_height="match_parent"
+
+            />
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="@dimen/d200"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:fitsSystemWindows="true"
+                android:background="@android:color/white"
+                app:itemBackground="@android:color/white"
+                app:itemTextColor="@drawable/nav_item_text_selector"
+                android:elevation="0dp" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <include android:id="@+id/navheader"
+                        layout="@layout/nav_header_main"/>
+                    <include android:id="@+id/menu"
+                        layout="@layout/menu_items"/>
+
+                </LinearLayout>
+                <android.support.design.widget.NavigationView
+                    android:id="@+id/navigation_drawer_bottom"
+                    android:layout_width="@dimen/d200"
+                    android:layout_height="@dimen/d54"
+                    android:layout_gravity="bottom"
+                    android:background="@color/colorPrimary"
+                    app:itemBackground="@color/colorPrimary"
+                    app:itemIconTint="@color/white_color"
+                    app:itemTextColor="@color/white_color" >
+                    <include
+                        layout="@layout/bottom_menu_lay"/>
+                </android.support.design.widget.NavigationView>
+
+            </android.support.design.widget.NavigationView>
+
+
+
+
+
+        </android.support.v4.widget.DrawerLayout>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+

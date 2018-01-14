@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="d1">1.0dip</dimen>
+    <dimen name="d10">10.0dip</dimen>
+    <dimen name="d100">100.0dip</dimen>
+    <dimen name="d12">12.0dip</dimen>
+    <dimen name="d120">120.0dip</dimen>
+    <dimen name="d14">14.0dip</dimen>
+    <dimen name="d16">16.0dip</dimen>
+    <dimen name="d18">18.0dip</dimen>
+    <dimen name="d2">2.0dip</dimen>
+    <dimen name="d20">20.0dip</dimen>
+    <dimen name="d200">200.0dip</dimen>
+    <dimen name="d26">26.0dip</dimen>
+    <dimen name="d28">28.0dip</dimen>
+    <dimen name="d30">30.0dip</dimen>
+    <dimen name="d36">36.0dip</dimen>
+    <dimen name="d4">4.0dip</dimen>
+    <dimen name="d40">40.0dip</dimen>
+    <dimen name="d46">46.0dip</dimen>
+    <dimen name="d50">50.0dip</dimen>
+    <dimen name="d54">54.0dip</dimen>
+    <dimen name="d6">6.0dip</dimen>
+    <dimen name="d60">60.0dip</dimen>
+    <dimen name="d62">62.0dip</dimen>
+    <dimen name="d64">64.0dip</dimen>
+    <dimen name="d66">66.0dip</dimen>
+    <dimen name="d70">70.0dip</dimen>
+    <dimen name="d75">75.0dip</dimen>
+    <dimen name="d8">8.0dip</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.nebrasapps.otlb.components.CustomText
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right|center_vertical"
+    android:padding="10dp"
+    android:singleLine="true"
+    android:textColor="@color/colorPrimary"
+    android:background="@color/desc_color"
+    android:textSize="14sp"
+    android:text="today"
+    android:id="@+id/section_text" />
