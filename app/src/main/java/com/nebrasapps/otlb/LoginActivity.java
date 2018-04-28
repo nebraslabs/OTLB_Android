@@ -83,12 +83,13 @@ public class LoginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if(!task.isSuccessful()){
-                            Toast.makeText(LoginActivity.this, "Invalid credentials", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "Email Or Password is Wrong!", Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
                         }else
                         {
                             final FirebaseUser user = task.getResult().getUser();
-
+                            
+                            // check in the database if the user is a customer
                                 DatabaseReference  mCustomerDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child("Customers").child(user.getUid());
                             mCustomerDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
@@ -101,8 +102,9 @@ public class LoginActivity extends AppCompatActivity {
                                         finish();
                                         progressBar.setVisibility(View.GONE);
                                     }else
-                                    {
-
+                                    {  // in this case the user is not a customer
+                                        
+                                        // check in the database if the user is a customer
                                         DatabaseReference mDriverDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child("Drivers").child(user.getUid());
                                         mDriverDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
                                             @Override
@@ -116,7 +118,7 @@ public class LoginActivity extends AppCompatActivity {
                                                     finish();
                                                     progressBar.setVisibility(View.GONE);
                                                 }else
-                                                {
+                                                {  // in this case the user is not a customer or driver
                                                     if(user!=null) {
                                                         FirebaseAuth.getInstance().signOut();
                                                     }
